@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 
 string today = DateTime.Today.ToString("dd");
+today = "10";
 var day = Assembly.GetExecutingAssembly().CreateInstance($"Advent.Days.Day{today}");
 if (day == null)
 {
